@@ -1,11 +1,12 @@
 {
-  "name": "react",
-  "version": "0.1",
+  "name": "crocodile",
+  "version": "0.0.1",
   "scripts": {
-    "start": "cross-env react-scripts start",
+    "start": "env-cmd -e react_env react-scripts start",
     "build": "react-scripts build",
     "storybook": "storybook dev -p 6006 --debug-webpack",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "env-cmd -e chromatic_env npx chromatic"
   },
   "dependencies": {
     "@types/node": "^16.11.43",
@@ -30,7 +31,8 @@
     "@storybook/react-webpack5": "^8.0.8",
     "@storybook/test": "^8.0.8",
     "@typescript-eslint/parser": "^5.30.6",
-    "cross-env": "^7.0.3",
+    "chromatic": "^11.3.0",
+    "env-cmd": "^10.1.0",
     "eslint": "8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",

@@ -4,6 +4,9 @@
 # production
 /build
 
+# logs
+*.log
+
 # misc
 /.idea
-.env
+.env-cmdrc
