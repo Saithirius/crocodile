@@ -1,0 +1,20 @@
+.btn {
+  padding: 1em;
+
+  background: rgba(var(--black), 0.4);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+
+  color: white;
+
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(var(--black), 0.5);
+  }
+
+  &:active {
+    background: rgba(var(--black), 0.6);
+  }
+}
